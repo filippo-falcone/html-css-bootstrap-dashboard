@@ -1,0 +1,43 @@
+/* #region GENERAL */
+header {
+    height: 4.375rem;
+}
+
+.ms-content {
+    height: calc(100dvh - 4.375rem);
+}
+
+aside {
+    width: 4.25rem;
+    transition: width 1s;
+}
+
+/* #endregion */
+
+/* #region DEBUG */
+.ms-debug>* {
+    border: 1px dashed coral;
+}
+
+.ms-debug>.ms-content>* {
+    height: 100%;
+}
+
+.ms-debug aside {
+    background-color: darkblue;
+}
+
+.ms-debug main {
+    background-color: lightgreen;
+}
+
+/* #endregion */
+
+/* #region RESPONSIVE */
+@media screen and (min-width:992px) {
+    aside {
+        width: 9.375rem;
+    }
+}
+
+/* #endregion */
