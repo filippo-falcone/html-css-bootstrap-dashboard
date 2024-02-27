@@ -21,6 +21,7 @@ aside {
 
 .ms-debug>.ms-content>* {
     height: 100%;
+    border: 1px dashed lightgray
 }
 
 .ms-debug aside {
