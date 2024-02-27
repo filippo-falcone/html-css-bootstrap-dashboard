@@ -8,3 +8,5 @@ Teniamo sempre sotto mano la documentazione della libreria per usare le caratter
 Potrebbero tornarci utili anche classi helper, utilities etc.
 Avrete due giorni per completare il layout, come sempre partite dall’analisi delle macroaree.
 Di questo cercate anche di capire cosa è uguale o molto simile e quindi realizzabile una volta per poi essere riciclato, ottimizzando tempo e codice.
+
+Preview--> https://filippo-falcone.github.io/html-css-bootstrap-dashboard/
