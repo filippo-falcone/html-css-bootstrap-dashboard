@@ -10,7 +10,6 @@ header {
 aside {
     width: 4.25rem;
     background-image: url(img/sidebar-bg.png);
-    transition: width 1s;
 }
 
 /* #endregion */
@@ -37,6 +36,17 @@ aside {
 
 .ms-bg-darkblue {
     background-color: #051e34;
+}
+
+.ms-bg-blue {
+    background-color: #165bba;
+}
+
+/* #endregion */
+
+/* #region ANIMATION */
+aside {
+    transition: width 1s;
 }
 
 /* #endregion */

@@ -106,12 +106,90 @@
         <!-- main -->
         <main class="flex-grow-1 overflow-y-auto h-100">
             <!-- main top -->
-            <div class="bg-primary text-white py-4">
+            <div class="bg-primary text-white py-4 position-sticky">
                 <div class="container-fluid">
                     <div class="row flex-column flex-md-row">
-                        <div class="col-12 col-md-3 order-md-3">Nuovo Studente</div>
-                        <div class="col-12 col-md-6 order-md-1 fs-3">Boolean</div>
-                        <div class="col-12 col-md-3 order-md-2">Studenti online negli ultimi 30 minuti</div>
+                        <div class="col-12 col-md-4 col-lg-3 order-md-3">
+                            <span class="me-2">Nuovo Studente</span>
+                            <!-- offcanvas -->
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                                    class="fa-solid fa-plus"></i></button>
+                            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
+                                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                                <div class="offcanvas-header">
+                                    <div class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Inserisci un nuovo
+                                        studente</div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="basic-url" class="form-label">Your vanity URL</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"
+                                                id="basic-addon3">https://example.com/users/</span>
+                                            <input type="text" class="form-control" id="basic-url"
+                                                aria-describedby="basic-addon3 basic-addon4">
+                                        </div>
+                                        <div class="form-text" id="basic-addon4">Example help text goes outside the
+                                            input group.</div>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Username"
+                                            aria-label="Username">
+                                        <span class="input-group-text">@</span>
+                                        <input type="text" class="form-control" placeholder="Server"
+                                            aria-label="Server">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <span class="input-group-text">With textarea</span>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /offcanvas -->
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 order-md-1 my-4 my-md-0">
+                            <span class="fs-2">Boolean</span> <span class="badge rounded-pill ms-bg-blue">Piano
+                                blaze</span>
+                            <div>
+                                <span class="badge rounded-pill ms-bg-blue">3 app</span>
+                                <span>»</span>
+                                <span class="badge rounded-pill ms-bg-blue">+</span>
+                                <span class="badge rounded-pill ms-bg-blue d-none d-lg-inline-block">Boolean mobile
+                                    app</span>
+                                <span class="badge rounded-pill ms-bg-blue d-none d-lg-inline-block">Boolean web
+                                    app</span>
+                                <span class="badge rounded-pill ms-bg-blue d-none d-lg-inline-block">Boolean blog
+                                    app</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 order-md-2">
+                            <div>Studenti online negli ultimi 30 minuti</div>
+                            <div class="fs-2">125</div>
+                        </div>
                     </div>
                 </div>
 
