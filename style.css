@@ -34,6 +34,19 @@ aside {
 
 /* #endregion */
 
+/* #region TYPOGRAPHY */
+.ms-bg-grey {
+    background-color: #e5e5e5;
+}
+
+/* #endregion */
+/* #region TYPOGRAPHY */
+.ms-text-orange {
+    color: #ff8f00;
+}
+
+/* #endregion */
+
 /* #region RESPONSIVE */
 @media screen and (min-width:992px) {
     aside {
