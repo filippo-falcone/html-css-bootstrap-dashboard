@@ -9,6 +9,7 @@ header {
 
 aside {
     width: 4.25rem;
+    background-image: url(img/sidebar-bg.png);
     transition: width 1s;
 }
 
@@ -24,19 +25,15 @@ aside {
     border: 1px dashed lightgray
 }
 
-.ms-debug aside {
-    background-color: darkblue;
-}
-
-.ms-debug main {
-    background-color: lightgreen;
-}
-
 /* #endregion */
 
 /* #region BACKGROUND */
 .ms-bg-grey {
     background-color: #e5e5e5;
+}
+
+.ms-bg-darkblue {
+    background-color: #051e34;
 }
 
 /* #endregion */
