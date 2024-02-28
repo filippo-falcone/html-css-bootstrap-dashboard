@@ -34,12 +34,13 @@ aside {
 
 /* #endregion */
 
-/* #region TYPOGRAPHY */
+/* #region BACKGROUND */
 .ms-bg-grey {
     background-color: #e5e5e5;
 }
 
 /* #endregion */
+
 /* #region TYPOGRAPHY */
 .ms-text-orange {
     color: #ff8f00;
