@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="ms-debug">
     <!-- header -->
     <header class="d-flex align-items-center bg-light">
         <div class="container-fluid bg-white">
@@ -78,8 +78,8 @@
     <!-- dashboard content -->
     <div class="ms-content d-flex">
         <!-- aside -->
-        <aside class="ms-bg-darkblue">
-            <nav class="d-flex flex-column justify-content-between align-items-center text-white h-100 py-4">
+        <aside class="ms-bg-darkblue  py-4">
+            <nav class="d-flex flex-column justify-content-between align-items-center text-white h-100">
                 <ul class="list-unstyled">
                     <li class="mb-3">
                         <a href="#" class="link-light"><i class="fa-solid fa-home"></i></a>
@@ -104,7 +104,20 @@
         </aside>
         <!-- /aside -->
         <!-- main -->
-        <main class="flex-grow-1 overflow-y-auto h-100"></main>
+        <main class="flex-grow-1 overflow-y-auto h-100">
+            <!-- main top -->
+            <div class="bg-primary text-white py-4">
+                <div class="container-fluid">
+                    <div class="row flex-column flex-md-row">
+                        <div class="col-12 col-md-3 order-md-3">Nuovo Studente</div>
+                        <div class="col-12 col-md-6 order-md-1 fs-3">Boolean</div>
+                        <div class="col-12 col-md-3 order-md-2">Studenti online negli ultimi 30 minuti</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /main top -->
+        </main>
         <!-- /main -->
     </div>
     <!-- /dashboard content -->
