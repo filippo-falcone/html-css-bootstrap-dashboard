@@ -12,6 +12,10 @@ aside {
     background-image: url(img/sidebar-bg.png);
 }
 
+.ms-colspan {
+    width: 70%;
+}
+
 .ms-btn {
     padding-left: 0.6rem;
     padding-right: 0.75rem;
