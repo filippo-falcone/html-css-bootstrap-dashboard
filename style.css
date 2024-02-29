@@ -54,6 +54,17 @@ aside {
     transition: width 1s;
 }
 
+.ms-li-hover:hover {
+    background-color: #ffffff89;
+}
+
+/* #endregion */
+
+/* #region HOVER */
+.ms-li-hover:hover {
+    opacity: 1;
+}
+
 /* #endregion */
 
 /* #region TYPOGRAPHY */
