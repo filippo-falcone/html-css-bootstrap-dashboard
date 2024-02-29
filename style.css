@@ -12,6 +12,10 @@ aside {
     background-image: url(img/sidebar-bg.png);
 }
 
+#offcanvasWithBothOptions {
+    width: 100%;
+}
+
 .ms-colspan {
     width: 70%;
 }
@@ -59,7 +63,8 @@ aside {
 /* #endregion */
 
 /* #region ANIMATION */
-aside {
+aside,
+#offcanvasWithBothOptions {
     transition: width 1s;
 }
 
@@ -90,9 +95,19 @@ aside {
     }
 }
 
+@media screen and (min-width:768px) {
+    #offcanvasWithBothOptions {
+        width: 60%;
+    }
+}
+
 @media screen and (min-width:992px) {
     aside {
         width: 9.375rem;
+    }
+
+    #offcanvasWithBothOptions {
+        width: 40%;
     }
 }
 
