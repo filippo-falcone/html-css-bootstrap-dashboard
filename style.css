@@ -21,6 +21,11 @@ aside {
     padding-right: 0.75rem;
 }
 
+.ms-btn-small {
+    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+}
+
 /* #endregion */
 
 /* #region DEBUG */
