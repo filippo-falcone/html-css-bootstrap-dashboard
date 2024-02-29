@@ -12,6 +12,11 @@ aside {
     background-image: url(img/sidebar-bg.png);
 }
 
+.ms-btn {
+    padding-left: 0.6rem;
+    padding-right: 0.75rem;
+}
+
 /* #endregion */
 
 /* #region DEBUG */
@@ -59,6 +64,12 @@ aside {
 /* #endregion */
 
 /* #region RESPONSIVE */
+@media screen and (min-width:576px) {
+    .ms-colspan {
+        width: 50%;
+    }
+}
+
 @media screen and (min-width:992px) {
     aside {
         width: 9.375rem;
