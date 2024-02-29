@@ -120,56 +120,6 @@
                             <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
                                     class="fa-solid fa-plus"></i></button>
-                            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"
-                                tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                                <div class="offcanvas-header">
-                                    <div class="offcanvas-title fw-bold" id="offcanvasScrollingLabel">Inserisci un
-                                        nuovo
-                                        studente</div>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                        <input type="text" class="form-control" placeholder="Username"
-                                            aria-label="Username" aria-describedby="basic-addon1">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Recipient's username"
-                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                        <span class="input-group-text" id="basic-addon2">@example.com</span>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="basic-url" class="form-label">Your vanity URL</label>
-                                        <div class="input-group">
-                                            <span class="input-group-text"
-                                                id="basic-addon3">https://example.com/users/</span>
-                                            <input type="text" class="form-control" id="basic-url"
-                                                aria-describedby="basic-addon3 basic-addon4">
-                                        </div>
-                                        <div class="form-text" id="basic-addon4">Example help text goes outside the
-                                            input group.</div>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control"
-                                            aria-label="Amount (to the nearest dollar)">
-                                        <span class="input-group-text">.00</span>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Username"
-                                            aria-label="Username">
-                                        <span class="input-group-text">@</span>
-                                        <input type="text" class="form-control" placeholder="Server"
-                                            aria-label="Server">
-                                    </div>
-                                    <div class="input-group">
-                                        <span class="input-group-text">With textarea</span>
-                                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- /offcanvas -->
                         </div>
                         <div class="col-12 col-md-4 col-lg-6 order-md-1 my-4 my-md-0">
@@ -224,10 +174,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-success">Done</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -241,10 +208,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-success">Done</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -258,10 +242,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-warning">Process</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -275,10 +276,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-success">Done</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -292,10 +310,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-danger">Failed</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -309,10 +344,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-success">Done</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -326,10 +378,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-danger">Failed</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
@@ -343,10 +412,27 @@
                                                 <td class="d-none d-md-table-cell">20%</td>
                                                 <td><span class="badge bg-success">Done</span></td>
                                                 <td>
-                                                    <button class="ms-btn btn btn-outline-secondary">
+                                                    <div class="btn-group d-sm-none" role="group">
+                                                        <button type="button"
+                                                            class="ms-btn btn btn-outline-secondary dropdown-toggle"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        </button>
+                                                        <ul class="dropdown-menu text-center">
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-pen"></i> Modifica</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item link-secondary" href="#">
+                                                                    <i class="fa-solid fa-trash"></i> Elimina</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button
+                                                        class="ms-btn btn btn-outline-secondary d-none d-sm-inline-block">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-secondary">
+                                                    <button class="btn btn-outline-secondary d-none d--inline-block">
                                                         <i class="fa-solid fa-trash"></i>
                                                     </button>
                                                 </td>
